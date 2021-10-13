@@ -1,14 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="Dashboard.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        
+      <div class="container-wrapper">
+        <div class="container-left">
+          <nav class="navbar">
+            <div class="logo">TidyQuant</div>
+            <ul class="navbar-list">
+              <li>Dashboard</li>
+              <li>User Details</li>
+              <li>Notification</li>
+              <li>Profile</li>
+            </ul>
+            <footer>Logout</footer>
+          </nav>
+        </div>
+        <div class="container-right">
+          <div class="menu" onclick="showmenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="user">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="forms">
+            <form>
+              <div class="names">
+                <label for="name">Select Name</label>
+                <input
+                  list="people"
+                  type="text"
+                  id="name"
+                  placeholder="Choose.."
+                  oninput="onInput(event)"
+                />
+                <datalist id="people"> </datalist>
+              </div>
+              <div class="names">
+                <label for="gender">Gender</label>
+                <input
+                  type="text"
+                  id="gender"
+                  name="gender"
+                  placeholder="Male"
+                  list="selectgender"
+                />
+                <datalist id="selectgender"> </datalist>
+              </div>
+              <div class="names">
+                <label for="birth">Birth</label>
+                <input
+                  type="number"
+                  id="birth"
+                  name="birth"
+                  placeholder="01-01-1995"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="garph">
+            <div id="one">
+              <div id="chartContainer" style="height: 250px; width: 100%; visibility: hidden;" ></div>
+            </div>
+            <div class="two"></div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+
+    <script src="Dashboard.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  </body>
 </html>
