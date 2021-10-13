@@ -1,13 +1,11 @@
 const Name = [
   {
     fname: "shubhams",
-    js:50,
-    css:50,
+    js:[50],
+    css:[50],
   },
   {
     fname: "gaurav",
-    js:45,
-    css:55,
   },
 ];
 
@@ -56,8 +54,8 @@ window.onload = function () {
         yValueFormatString: '##0.00"%"',
         indexLabel: "{label} {y}",
         dataPoints: [
-          { y: Name.map((e)=>{
-            e.js
+          { y: Name.map((es)=>{
+            es.js
           }), label: "Google" },
         ],
       },
