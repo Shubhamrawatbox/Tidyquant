@@ -1,15 +1,12 @@
 const Name = [
   {
-    fname: "shubhams",
-    js:[50],
-    css:[50],
+    fname: "shubham",
   },
   {
     fname: "gaurav",
   },
 ];
-
-
+const xaxis = [20, 50, 30];
 
 const Gender = [
   {
@@ -54,9 +51,9 @@ window.onload = function () {
         yValueFormatString: '##0.00"%"',
         indexLabel: "{label} {y}",
         dataPoints: [
-          { y: Name.map((es)=>{
-            es.js
-          }), label: "Google" },
+          { y: xaxis[0], label: "Java" },
+          { y: xaxis[1], label: "Javascript" },
+          { y: xaxis[2], label: "C++" },
         ],
       },
     ],
@@ -71,7 +68,7 @@ let namesss = Name.map((names) => {
 function onInput(e) {
   var chart = document.getElementById("chartContainer");
 
-  if (e.target.value === "shubhams") {
+  if (e.target.value === "shubham") {
     console.log(namesss);
     chart.style.visibility = "visible";
   }
