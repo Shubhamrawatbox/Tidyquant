@@ -114,10 +114,14 @@ input:focus {
 
 .one-img{
   width: 450px;
-  
+
 }
 .one-img img{
 width: 100%;
+}
+.garph{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 @media screen and (max-width: 980px) {
   .container-left {
@@ -155,10 +159,17 @@ width: 100%;
     display: none;
   }
   .forms {
-    margin: -5rem auto;
+    margin: 10rem auto;
   }
   .names{
     flex-basis: 35%;
     width: 90%;
+  }
+  .garph{
+    margin-top: 10rem;
+    grid-template-columns: 1fr;
+  }
+  .two{
+    margin: 3rem 1rem;
   }
 }
