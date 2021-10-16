@@ -2,7 +2,7 @@ const Data = {
   Shubham: {
     fname: "Shubham",
     axis: [60, 20, 20],
-    axis2: [450, 420, 460],
+    axis2: [450, 420, 260],
   },
   Rahul: {
     fname: "Rahul",
@@ -15,6 +15,7 @@ const Data = {
     axis2: [350, 120, 560],
   },
 };
+
 
 let Axis1 = Data.Shubham.axis;
 let Axis2 = Data.Rahul.axis;
@@ -30,6 +31,10 @@ document.getElementById(
 <option>${Data.Rahul.fname}</option>
 <option>${Data.Gaurav.fname}</option>
 `;
+
+document.getElementById("selectgender").innerHTML = `<option>Male</option>
+<option>Female</option>`;
+
 
 const showmenu = () => {
   document.querySelector(".navbar-list").classList.toggle("active");
