@@ -94,6 +94,8 @@ var check2 = (checkyaxis) => {
   charts.render();
 };
 
+
+
 function onInput(e) {
   if (e.target.value === Data.Shubham.fname) {
     check(Axis1);
